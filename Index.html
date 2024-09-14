@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<linkclass="" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="page2.css">
+  
+  
+  <title>Edifice International Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+      
+      body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans serif;
+  transition: all .5s;
+}
+
+header{
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding: 10px;
+  position: scroll;
+}
+
+header .logo-hold{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.logo-hold h1{
+  margin-left: 15px;
+}
+header .img-hold{
+  width: 70px;
+}
+
+.body-img{
+  background-image: url(logo.jpg);
+  background-size: cover;
+  width: 100%;
+  
+}
+
+.img-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.60);
+}
+
+.img-text{
+  width: 500px;
+  display: block;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.img-content h1{
+   color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.body-group{
+  width: 700px;
+  display: block;
+  margin: auto;
+  border: 2px solid gainsboro;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.group{
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 720px){
+  header .logo-hold h1{
+    font-size: 16px;
+  }
+  .body-group{
+    width: 330px;
+  }
+  .body-post .post-hold{
+    font-size: 8px;
+  }
+ .body-group .flyer-hold{
+    width: 300px;
+  }
+  .input-hold{
+    flex-wrap: wrap;
+  }
+ .btn-group p,.img-upload{
+    text-align: center;
+    display: block;
+    margin: auto;
+   margin-top: 20px;
+  }
+ .circle-group{
+  margin-top: 45rem;
+  }
+  .circle-group .circle-img{
+    height: 80px;
+    width: 80px;
+  }
+  .circle-group .circle-name h2{
+    font-size: 17px;
+  }
+}
+
+
+
+.body-title{
+  display: flex;
+  align-items: center;
+}
+
+.body-title .title-logo{
+  height: 60px;
+  width: 60px;
+  background-image: url(logo.jpg);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+}
+
+.title-text{
+  margin: 0px 10px;
+}
+.title-text p{
+  margin-top: -13px;
+}
+
+.circle-group{
+  width: fit-content;
+  position: absolute;
+  top: 77%;
+  left: 57%;
+}
+
+.circle-img{
+  height: 130px;
+  width: 130px;
+  display: block;
+  margin: auto;
+  background-color: gray;
+  border-radius: 50%;
+  border: 2px solid orange;
+  background-image: url(man2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.circle-name h2{
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+.body-post{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-left: none;
+  border-right: none;
+}
+
+.body-post .post-hold{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 26px;
+}
+
+.post-hold h3{
+  margin: 0px 6px;
+}
+
+.share-hold{
+  padding: 10px;
+}
+
+
+.share-btn .btn1,.btn2,.btn3,.btn4{
+  background-color: transparent;
+  padding: 17px 14px;
+  margin: 0px 6px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all .4s;
+}
+
+.share-btn button:hover{
+  transform: scale(1.1);
+}
+
+.share-btn .btn1{
+  border: 2px solid darkblue;
+}
+
+.share-btn .btn2{
+  border: 2px solid skyblue;
+}
+
+.share-btn .btn3{
+  border: 2px solid blue;
+}
+
+
+.share-btn .btn4{
+  border: 2px solid green;
+}
+
+.flyer-hold{
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+
+.flyer-hold .img-hold{
+  width: 100%;
+}
+
+.form-area{
+  padding: 20px;
+}
+
+.input-hold{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.input-hold .hold1{
+  margin: 10px 20px;
+  width: 300px;
+}
+
+.input-hold .hold1 input{
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background-color: gainsboro;
+  border: none;
+  font-size: 17px;
+  border-radius: 4px;
+}
+
+.input-hold .hold1 font{
+  color: red;
+}
+
+.btn-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+
+.btn-group button{
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 5px;
+  transition: all .5s;
+}
+
+.btn-group button:hover{
+  background-color: black;
+  color: white;
+}
+
+.image-display{
+  height: 130px;
+  width: 85%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.image-display button{
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+
+.next-hold{
+  width: 85%;
+  margin: auto;
+  background-color:  lavenderblush;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 10px 14px;
+  
+}
+
+.next-hold button{
+  padding: 8px;
+  width: 60%;
+  background-color: deeppink;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 17px;
+  transition: all .4s;
+}
+
+.next-hold button a{
+  color: white;
+  text-decoration: none;
+}
+
+.next-hold button:hover{
+  transform: scale(1.1);
+}
+
+.comment-group{
+  padding: 20px;
+  display: block:
+  margin: auto;
+}
+
+.comment-hold{
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.comment-group .comment-hold textarea{
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  border: none;
+  background-color: lightgray;
+  display: block;
+  font-size: 18px;
+}
+
+.comment-hold button{
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  background-color: deeppink;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all .4s;
+}
+
+.comment-hold button a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.review-hold{
+  margin: 20px 0px;
+  border-bottom: 1px solid gainsboro;
+  transition: all .4s;
+}
+
+.review{
+  display: flex;
+  align-items: ;
+}
+
+.review-btn{
+  width: fit-content;
+}
+
+.review-btn button{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  background-image: url(default.jpeg);
+  background-size: cover;
+  margin-bottom: -40px;
+}
+
+.review-btn .days{
+  font-weight: 600;
+  margin-top: 1px;
+  text-align: center;
+}
+
+.review .name{
+  margin-left: 20px;
+}
+
+.load-more{
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 80%;
+  background-color: deeppink;
+  border: none;
+  border-radius: 8px;
+}
+
+.load-more a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.author{
+  color: black;
+  padding: 1px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.chat{
+  height: 60px;
+  width: 60px;
+  border: none;
+  background-color: deeppink;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  top: 85%;
+  left: 80%;
+  position: fixed;
+} 
+  
+ #board {
+  position: relative;   
+}    
+  #displayImage {
+            position: relative;
+            cursor: move;
+            z-index: 1;
+            overflow: hidden;
+        }
+        #ina {
+            position: absolute;
+            top: 8.2%;
+            left: 65%;
+            width: 27%;
+            height: 5.3%;
+            border: 3px solid white;
+            border-radius: 50%;
+            z-index: 2;
+            overflow: hidden;
+        }
+            
+            
+  
+        
+   input[type="file"]{
+   display: none;    
+   text-align: left;
+      }
+      
+      label[for="imageInput"]{
+          background-color: deeppink;
+          color: white;
+          padding : 10px;
+          border-radius:5px;
+          cursor:pointer;
+          display: ;
+          justify-content: left;
+          margi-left: 0;
+          align-item: left;
+          
+      } 
+      .form-area{
+  padding: 20px;
+}
+
+.input-hold{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.input-hold .hold1{
+  margin: 10px 20px;
+  width: 250px;
+}
+
+.input-hold .hold1 input{
+  width: 90%;
+  display: block;
+  padding: 10px;
+  background-color: gainsboro;
+  border: none;
+  font-size: 17px;
+  border-radius: 4px;
+}
+
+.input-hold .hold1 font{
+  color: red;
+  }
+  input[type="file"]{
+   display: none;    
+   text-align: left; 
+   
+}
+      
+ label[for="imageInput"]{
+   background-color: deeppink;
+   color: white;
+   padding : 10px;
+   border-radius:5px;
+   cursor:pointer;
+          display: ;
+          justify-content: left;
+          margin-left: 0;
+          align-item: left;
+          
+}
+#submit-button{
+    font-size: 15px;
+    height: 40px;
+    width: 90px;
+    margin-left: 77px;
+    color: white;
+    background-color: deeppink;
+    
+}
+  #sname{
+      margin-left: 3px;
+  }
+      
+  </style>
+  
+</head>
+<body>
+  <!-- HEADER SECTION -->
+  <header>
+    <div class="logo-hold">
+    <div class="img-hold">
+      <img src="logo.jpg" width="100%">
+    </div>
+      <h1>Edifice International Network</h1>
+    </div>
+  </header>
+  
+  <!-- BODY IMAGE SECTION -->
+  <div class="body-img">
+    <div class="img-content">
+      <div class="img-text">
+      <h1>EDIFICE INT'L NETWORK -I WILLING TO BE ATTENDING</h1>
+        </div>
+    </div>
+  </div>
+  
+  <div class="body-group">
+    <div class="group">
+    <h1>EDIFICE INT'L NETWORK -I WILLING TO BE ATTENDING</h1>
+    
+    <div class="body-title">
+      <button class="title-logo"></button>
+      <div class="title-text">
+        <h3>Edifice International Network</h3>
+        <p>19-07-2023</p>
+      </div>
+    </div>
+    </div>
+     
+  
+    <div class="share-hold">
+      <h4>Share:</h4>
+      <div class="share-btn">
+        <button class="btn1"><i class="fab fa-facebook-f"></i></button>
+        <button class="btn2"><i class="fab fa-twitter"></i></button>
+        <button class="btn3"><i class="fab fa-linkedin"></i></button>
+        <button class="btn4"><i class="fab fa-whatsapp"></i></button>
+      </div>
+    </div>
+ 
+    <div id="board">
+        <img id="Flyer-download" src="flyer2.jpg" alt="Flier" style = 'margin: "auto"; padding: "auto" height:350px; width:320px; border-radius: ; display: flex; margin: 0 auto'>
+        <div id="ina" style="position:; width: ; height:">
+            <img id="displayImage" src="" alt="Uploaded Image" style=" display: none;" height="100%" width="100%">
+        </div>
+       <br>
+       
+       
+       
+      <!--   <div class="fil" style="text-align:left;">
+            <input type="file" accept="image/jpeg, image/PNG, image/jpg"  id="imageInput" style="display:inlin-block;">
+            <label for="imageInput" style="display:inline-block; margin-left:190px; margin-top:40px">upload file</label>
+        </div>
+    </div>
+       -->  <form> 
+    <div class="form-area">
+      <h3>Create your Entry Below</h3>
+      
+      <div class="input-hold">
+        
+        <div class="hold1">
+        <label>Your Email            
+          <font>*</font>
+        </label>
+        <input type="email" name="email" required>
+          </div>
+        <br>
+         <div class="hold1">
+        <label>First Name            
+          <font>*</font>
+        </label>
+        <input type="text" name="Fname" required>
+        <br>
+        <div class="hold1" id="sname">
+        <label>second Name            
+          <font>*</font>
+        </label>
+        <input type="text" name="Sname" required>
+        <br>
+        <input type="button" value="submit" id="submit-button">
+          </div>
+      </div>
+      
+   <!--  <div class="btn-group">
+        <p>Image Input</p>
+        <button class="img-upload" type="file">
+          CHOOSE IMAGE
+        </button>
+      </div>
+    </div>
+    
+    <!-- <div class="image-display">
+      <button>ADD IMAGE</button>
+    </div> -->
+    
+    <div class="fil" style="text-align:left;">
+            <input type="file"  accept="image/jpeg, image/PNG, image/jpg"  id="imageInput" style="display:inlin-block;">
+            <label for="imageInput" style="display:inline-block; margin-left:0px; margin-top:35px">upload file</label>
+        </div>
+    </div>
+      </form>
+   
+    <div class="next-hold">
+      <button id="dL-png">DOWNLOAD IMAGE</a></button>
+    </div>
+    
+    
+     <div class="comment-group">
+      <h3>Comment (30)</h3>
+      
+      <div class="comment-hold">
+        <p>Your Comments <font>*</font></p>
+        <textarea name="message"></textarea>
+        <button><i class="fa fa-paper-plane"><a href="">Post Comment</a></i></button>
+      </div>
+     
+      <div class="review-hold">
+      <div class="review">
+        <div class="review-btn">
+          <button></button>
+          <p class="days">2 Days</p>
+        </div>
+        <h4 class="name">Smith Adams</h4>
+         </div>
+        <p>I will Be there 100%</p>
+      </div>
+      
+      <div class="review-hold">
+      <div class="review">
+        <div class="review-btn">
+          <button></button>
+          <p class="days">2 Days</p>
+        </div>
+        <h4 class="name">Smith Adams</h4>
+         </div>
+        <p>I will Be there 100%</p>
+      </div>
+      
+      <div class="review-hold">
+      <div class="review">
+        <div class="review-btn">
+          <button></button>
+          <p class="days">2 Days</p>
+        </div>
+        <h4 class="name">Smith Adams</h4>
+         </div>
+        <p>I will Be there 100%</p>
+      </div>
+      
+      
+      <div class="review-hold">
+      <div class="review">
+        <div class="review-btn">
+          <button></button>
+          <p class="days">2 Days</p>
+        </div>
+        <h4 class="name">Smith Adams</h4>
+         </div>
+        <p>I will Be there 100%</p>
+      </div>
+      
+      <button class="load-more"><a href="">LOAD MORE COMMENTS</a></button>
+      
+    </div>
+
+  </div>
+  
+  <div class="author">
+    <p>Powered By <img src="logo.jpg" height="30px;"> Edifice</p>
+  </div>
+  
+  <button class="chat">
+    <i class="fa fa-comments"></i>
+  </button>
+  
+  <script>
+      
+      document.getElementById('imageInput').addEventListener('change', function(event) {
+            var file = event.target.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var img = document.getElementById('displayImage');
+                    img.style.display = 'inline';
+                    img.style.position = 'absolute';
+                    img.style.overflow = 'hidden';
+                    img.src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });  
+        
+        
+        
+        
+        
+        
+       /* var html2canvas = html2canvas;
+        document.getElementById("dL-png").addEventListener("click", function(){
+    const screenshortTarget =    document.getElementById("flyer-download");
+     html2canvas(screenshotTarget).then((canvas)=>{
+        const base64Image = canvas.toDataURL("image/png");
+        var anchor =
+     document.createElement('a');
+     anchor.SettAttribute("href", base64Image);
+     anchor.SettAttribute("download", "my-image.png");
+     anchor.click();
+     anchor.remove();
+     */
+    </script>
+   
+      
+      
+  </script>
+  
+  
+  
+  
+        
+</body>
+</html>
